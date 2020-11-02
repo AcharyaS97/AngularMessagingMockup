@@ -6,7 +6,7 @@
     "build": "ng build --prod",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "npm run build"
+    "postinstall": "npm run-script build"
   },
   "private": true,
   "dependencies": {
