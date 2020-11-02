@@ -1,0 +1,25 @@
+<div class="d-flex flex-column justify-content-between">
+
+  <div class="d-flex flex-start">
+    <input type="file" accept="image/*" capture="user" name="" class="fileInput" id="camera" (change) = 'onFileChange($event)'/>
+    <p> {{uploadedFileName}}</p>
+    <input type="file" accept="audio/*,.pdf" name="" class="fileInput" id="file" (change) = 'onFileChange($event)'/>
+  </div>
+  <div class="d-flex justify-content-between iconbar">
+    <fa-icon [icon] = 'mapIcon' class="fa-2x" (click)='getLocation()'></fa-icon>
+
+    <fa-icon [icon] = 'cameraIcon' class="fa-2x" (click)='openFileBrowser($event,"camera")'>
+    </fa-icon>
+    <fa-icon [icon] = 'folderIcon' class="fa-2x" (click)='openFileBrowser($event,"file")'></fa-icon>
+  </div>
+
+  <div class="row">
+    <input id="inputText" type="text" #inputTextbox>
+    <input id="inputButton" class="btn btn-primary" type="button" value="send" (click)="onSend(inputTextbox)">
+  </div>
+
+
+</div>
+
+
+
