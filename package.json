@@ -4,7 +4,11 @@
   "scripts": {
     "ng": "ng",
     "serve": "ng serve",
+<<<<<<< HEAD
     "build": "ng build --prod",
+=======
+    "build": "ng build",
+>>>>>>> master
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "npm run-script build"
