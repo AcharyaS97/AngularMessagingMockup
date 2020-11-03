@@ -1,7 +1,12 @@
 module.exports = {
   apps: [
-      {
-          script: "npx serve -s"
+    {
+      name        : "main",
+      script      : "./main.ts",
+      watch       : true,
+      env_production : {
+         "NODE_ENV": "production"
       }
+    }
   ]
 };
